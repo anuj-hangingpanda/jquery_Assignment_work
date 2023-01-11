@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Json Assignement</title>
+<script
+      src="https://code.jquery.com/jquery-2.2.4.js"
+      integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+      crossorigin="anonymous"
+    ></script>
+  </body>
+  </head>
+  <body>
+<p style="color:red; font-weight: bolder;">this is Json Assignemnt</p>
+<div id="First_name"></div>
+<div id="last_name"></div>
+<div id="DOB"></div>
+<div id="all"></div>
+
+<div id="Fnames_array"></div>
+<div id="Lnames_array"></div>
+<div id="DOB_array"></div>
+
+
+    <script>
+
+// Assignment 1 & 2
+
+// const myObj = {Firstname:"Anuj", Lastname:"Yadav", DOB:"05/11/2000"};
+// $("#First_name").html(myObj.Firstname);
+// $("#last_name").html(myObj.Lastname);
+// $("#DOB").html(myObj.DOB);
+
+// $("#all").append(myObj.Firstname);
+// $("#all").append(myObj.Lastname);
+// $("#all").append(myObj.DOB);
+
+// Assignment 3 
+
+const fnames = '["anuj", "karan", "Rahul"]';
+const first_nameArray = JSON.parse(fnames);
+
+const lnames = '["yadav", "Srivastava", "trivedi"]';
+const last_nameArray = JSON.parse(lnames);
+
+const DOB = '["07/02/2000", "07/04/1999", "26/12/2001"]';
+const DOB_array = JSON.parse(DOB);
+
+// document.getElementById("names_array").innerHTML = myArray[1];
+$("#Fnames_array").html(first_nameArray[0]);
+$("#Lnames_array").html(last_nameArray[0]);
+$("#DOB_array").html(DOB_array[0]);
+
+
+
+    </script>
+</html>
