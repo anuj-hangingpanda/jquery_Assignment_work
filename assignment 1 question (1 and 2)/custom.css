@@ -1,0 +1,10 @@
+* {
+  margin: 3px;
+  padding: 3px;
+  color: black;
+  font-weight: bold;
+}
+.checkbox {
+  height: 30px;
+  width: 30px;
+}

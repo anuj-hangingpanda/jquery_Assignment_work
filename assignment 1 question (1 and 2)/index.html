@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Different Events and Different alert</title>
+<script
+      src="https://code.jquery.com/jquery-2.2.4.js"
+      integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+      crossorigin="anonymous"
+    ></script>
+  </body>
+  </head>
+  <body>
+<div class="1">
+    <a href="#" class="click1">This is first link and will work on click</a>
+</div>
+    <br /><br />
+<div class="2">
+    <a href="#" class="hover1"
+      >This is first link and will work on hover
+    </a>
+</div>
+    <br /><br />
+<div class="3">
+<a href="#" class="focus1"
+      >This is first link and will work on focus</a>
+</div>
+   <br /><br />
+<div class="2">
+    <a href="#" class="mouseover1"
+      >This is first link and will work on mouseover</a>
+</div>
+    <script>
+$(document).ready(function(){
+ $(".click1").click(function () {
+        console.log("click event called");
+        alert("The click event is called");
+      });
+  $(".hover1").hover(function () {
+        console.log("hover event called");
+        alert("The hover event is called");
+      });
+//   $(".focus1").focusin(function () {
+//         console.log("click event called");
+//         // alert("focus event is called");
+//       });
+
+$( ".focus1" ).focus(function() {
+  alert( "Handler for .focus() called." );
+});
+
+
+
+  $(".mouseover1").mouseover(function () {
+        console.log("mouseover event called");
+        alert("The mouseover event is called");
+      });
+
+})
+     
+    </script>
+</html>
